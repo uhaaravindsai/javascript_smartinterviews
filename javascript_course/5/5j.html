@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quality</title>
+  </head>
+  <body>
+    <button onclick="
+      console.log(`cart quantity: ${cartQuality}
+  `);
+  ">Show Quantity</button>
+
+<button onclick="
+  cartQuality++;
+console.log(`cart quantity: ${cartQuality}
+`);
+">Add to cart</button>
+
+ <button onclick="
+ cartQuality += 2;
+ console.log(`cart quantity: ${cartQuality}
+`);
+ ">+2</button>
+
+    <button onclick="
+     cartQuality = cartQuality + 3;
+     console.log(`cart quantity: ${cartQuality}
+`);
+    ">+3</button>
+
+<button onclick="
+cartQuality = cartQuality += 4;
+console.log(`cart quantity: ${cartQuality}
+`);
+">+4</button>
+
+<button onclick="
+     cartQuality = cartQuality += 5;
+     console.log(`cart quantity: ${cartQuality}
+`);
+    ">+5</button>
+
+<button onclick="
+cartQuantity = cartQuantity - 1;
+console.log(`Cart quantity: ${cartQuantity}`);
+">Remove from cart</button>
+
+<button onclick="
+cartQuantity = cartQuantity - 2;
+console.log(`Cart quantity: ${cartQuantity}`);
+">-2</button>
+
+<button onclick="
+cartQuantity = cartQuantity - 3;
+console.log(`Cart quantity: ${cartQuantity}`);
+">-3</button>
+
+    <button onclick="
+     cartQuality = 0;
+     console.log('cart was reset.');
+     console.log(`cart quality: ${cartQuality}
+     `);
+     ">Reset Cart</button>
+    
+    <script>
+     let cartQuality = 0;
+    </script>
+  </body>
+</html>
